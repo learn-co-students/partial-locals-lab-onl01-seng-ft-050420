@@ -1,0 +1,10 @@
+<p>
+  <%= classroom.course_name %>
+  <%= classroom.semester %>
+</p>
+  
+<ul>
+  <% classroom.students.each do |student| %>
+    <li><%= render partial: 'students/student', locals:{student: student} %></li>
+  <% end %>
+</ul>
