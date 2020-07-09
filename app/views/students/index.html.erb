@@ -1,6 +1,6 @@
   
 <%= form_tag(students_path, method: :get) do %>
-  <%= text_field_tag :query, params[:query], placeholder: 'Enter search term...' %>
+  <%= text_field_tag :query, params[:query], placeholder: 'Search' %>
   <%= submit_tag("Search") %>
 <% end %>
 
