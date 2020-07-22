@@ -1,0 +1,12 @@
+<h1>index</h1>
+
+<%= form_tag('/students', method: 'get') do %>
+  <%=label_tag(:query, "Search:")%>
+  <%=text_field_tag(:query)%> 
+  <%=submit_tag("Search")%>
+<%end%>
+<%binding.pry if params[:query]=="Zebra"%> 
+
+
+<h1>Other render</h1>
+<%=render(@students) || "No students!" %>
